@@ -1,0 +1,24 @@
+h1 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: aquamarine;
+}
+
+li {
+    text-align: justify;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sub {
+    font-style: italic;
+    font-size: large;
+    font-weight: bold;
+    background-color: rgb(255, 51, 0);
+}
+
+.sub2 {
+    font-style: italic;
+    font-size: large;
+    font-weight: bold;
+    background-color: aqua;
+}

@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patrones de Diseño</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <h1>CARACTERÍSTICAS PRINCIPALES DE LOS PATRONES DE DISEÑO MÁS CONOCIDOS</h1>
-<ol type="A">
-    <li>Patrones creacionales</li>
-    <ol>
-        <li>Builder:
+    <ol type="A">
+        <li class="sub">Patrones creacionales</li>
+        <ol>
+            <li class="sub2">Builder:</li>
             <ol type="i">
                 <li>
                     Permite la instanciación de objetos de manera rápida y fluida
@@ -23,8 +24,7 @@
                     Un ejemplo práctico puede ser la creación de una libreta de contactos.
                 </li>
             </ol>
-        </li>
-        <li>Factory:
+            <li class="sub2">Factory:</li>
             <ol type="i">
                 <li>
                     Permite empaquetar varias clases para ser instanciadas a través de una interfaz común. Es a través de la interfaz que se realiza la instanciación por medio de la diferenciación de parámetros de entrada, de ese modo el objeto se instancia en una u otra de las clases empaquetadas.
@@ -36,36 +36,34 @@
                     Un ejemplo práctico puede ser un listado de libros para los cuales se presentan características diferentes de acuerdo a su idioma, luego al instanciar un objeto libro bajo el patrón factory y recibir el parámetro de idioma se dan propiedades y métodos diferentes de acuerdo al valor de idioma ingresado.
                 </li>
             </ol>
-        </li>
-    <li>Prototype:
-        <ol type="i">
-            <li>
-                Permite realizar una copia de un objeto previamente instanciado obteniendo todas las propiedades y métodos del original. Este objeto se copia por medio de la implementación de la interfaz Cloneable y luego pueden modificarse sus propiedades y aplicar sus métodos sin afectar el objeto original.
-            </li>
-            <li>
-                Aplicable para la creación de múltiples objetos similares que pueden tener pequeñas diferencias en sus propiedades.
-            </li>
-            <li>
-                Un ejemplo práctico puede ser la creación de una base de datos donde los objetos son productos para los cuales se debe cambiar el precio y la zona donde se localizan. Todos los productos tienen las mismas propiedades, solo que su precio y localización debe cambiar entre uno y otro.
-            </li>
+            <li class="sub2">Prototype:</li>
+            <ol type="i">
+                <li>
+                    Permite realizar una copia de un objeto previamente instanciado obteniendo todas las propiedades y métodos del original. Este objeto se copia por medio de la implementación de la interfaz Cloneable y luego pueden modificarse sus propiedades y aplicar sus métodos sin afectar el objeto original.
+                </li>
+                <li>
+                    Aplicable para la creación de múltiples objetos similares que pueden tener pequeñas diferencias en sus propiedades.
+                </li>
+                <li>
+                    Un ejemplo práctico puede ser la creación de una base de datos donde los objetos son productos para los cuales se debe cambiar el precio y la zona donde se localizan. Todos los productos tienen las mismas propiedades, solo que su precio y localización debe cambiar entre uno y otro.
+                </li>
+            </ol>
+            <li class="sub2">Singleton:</li>
+            <ol type="i">
+                <li>
+                    Permite crear una clase sobre la cual solo puede hacerse una instancia. Cualquier nuevo objeto de la clase se realiza sobre el mismo espacio de memoria, lo que garantiza que no existirá un nuevo objeto instanciado de la misma clase.
+                </li>
+                <li>
+                    Aplicable para manejo de sesiones individuales de usuario, contraseñas de acceso y demás elementos que requieran ser individuales y no copiados o reproducidos dentro del mismo sistema.
+                </li>
+                <li>
+                    Un ejemplo práctico puede ser la asignación de contraseñas en una red de navegación, donde un usuario no puede tener dos sesiones abiertas al mismo tiempo.
+                </li>
+            </ol>
         </ol>
-    </li>
-    <li>Singleton:
-        <ol type="i">
-            <li>
-                Permite crear una clase sobre la cual solo puede hacerse una instancia. Cualquier nuevo objeto de la clase se realiza sobre el mismo espacio de memoria, lo que garantiza que no existirá un nuevo objeto instanciado de la misma clase.
-            </li>
-            <li>
-                Aplicable para manejo de sesiones individuales de usuario, contraseñas de acceso y demás elementos que requieran ser individuales y no copiados o reproducidos dentro del mismo sistema.
-            </li>
-            <li>
-                Un ejemplo práctico puede ser la asignación de contraseñas en una red de navegación, donde un usuario no puede tener dos sesiones abiertas al mismo tiempo.
-            </li>
-        </ol>
-    </ol>
-    <li>Patrones estructurales</li>
-    <ol>
-        <li>Adapter:
+        <li class="sub">Patrones estructurales</li>
+        <ol>
+            <li class="sub2">Adapter:</li>
             <ol type="i">
                 <li>
                     Permite hacer adaptaciones de código externo que no puede modificarse o está desactualizado. Adaptar nuevas librerías para utilizar código existente.
@@ -77,8 +75,7 @@
                     Un ejemplo práctico puede ser si quieres unificar una lista de contactos que provienen de diferentes sistemas pero traen la misma información. Desde tu sistema puedes realizar las adaptaciones necesarias para que al ingresar contactos desde cada sistema de almacenamiento puedas condensar una única lista.
                 </li>
             </ol>
-        </li>
-        <li>Decorator:
+            <li class="sub2">Decorator:</li>
             <ol type="i">
                 <li>
                     Permite mejorar una clase sin que se modifique la clase original. Pueden adicionarse propiedades y métodos a través de una clase “decorator”.
@@ -90,8 +87,7 @@
                     Un ejemplo práctico puede ser la implementación de una base de datos de libros en la cual se quieren adicionar clasificaciones según opiniones de usuarios, por ejemplo: “más leído”,  “más me gusta”, etc. Estas clasificaciones pueden adicionarse al objeto libro sin modificar la clase Libro a través de una clase decorator.
                 </li>
             </ol>
-        </li>
-        <li>Facade:
+            <li class="sub2">Facade:</li>
             <ol type="i">
                 <li>
                     Permite trasladar o transferir la complejidad del código a una clase desde donde se pueden realizar las acciones del código de forma sencilla. De alguna forma es como esconder el código que puede ser complejo para facilitar su ejecución.
@@ -103,7 +99,7 @@
                     Un ejemplo práctico puede ser la remanufactura de código llevando el código complejo a unas cuantas líneas para su ejecución.
                 </li>
             </ol>
-        </li>
+        </ol>
     </ol>
 </body>
 </html>
